@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prathamesh</title>
+  <meta name="description" content="Hi! I am Prathamesh.">
+  <meta name="theme-color" content="#14213d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👋%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #e8edf2;
+      --ink: #14213d;
+      --accent: #e8a200;
+      --photo-bg: #cfd8e1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1626;
+        --ink: #eaf0f6;
+        --accent: #f2b21f;
+        --photo-bg: #1b2740;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+      width: 100%;
+      max-width: 300px;
+    }
+    .photo {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1300 / 1500;
+      object-fit: cover;
+      border-radius: 6px;
+      background: var(--photo-bg);
+      display: block;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 6vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      padding-bottom: 14px;
+      border-bottom: 4px solid var(--accent);
+    }
+    @media (min-width: 820px) {
+      main {
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+        max-width: 820px;
+      }
+      .photo { width: 300px; flex: none; }
+      h1 { font-size: clamp(2.25rem, 4vw, 3.25rem); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="photo" src="psh_web.jpg" width="650" height="750" alt="Photo of Prathamesh">
+    <h1>Hi! I am Prathamesh.</h1>
+  </main>
+</body>
+</html>
